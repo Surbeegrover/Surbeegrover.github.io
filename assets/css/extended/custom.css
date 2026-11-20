@@ -1,0 +1,28 @@
+:root {
+  --brand: #0d6b72;
+  --brand-gold: #ffb703;
+}
+
+.dark {
+  --brand: #5fd6c8;
+}
+
+.post-content a,
+.post-entry .entry-content a {
+  box-shadow: 0 1px 0 0 var(--brand);
+}
+
+.home-info .entry-header h1 {
+  color: var(--brand);
+}
+
+.post-tags a:hover,
+.terms-tags a:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
+::selection {
+  background: var(--brand-gold);
+  color: #1b1f4b;
+}
