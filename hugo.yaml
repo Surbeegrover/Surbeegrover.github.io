@@ -1,0 +1,94 @@
+baseURL: "https://surbeegrover.github.io/"
+languageCode: en-us
+title: Surbee Grover
+theme: PaperMod
+
+pagination:
+  pagerSize: 10
+
+enableRobotsTXT: true
+enableEmoji: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+taxonomies:
+  tag: tags
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  title: Surbee Grover
+  description: "Notes from building with gen AI: agents, specs, and tools that make software work better."
+  author: Surbee Grover
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: false
+  ShowRssButtonInSectionTermList: true
+  comments: false
+
+  assets:
+    favicon: "favicon.svg"
+    favicon16x16: "favicon.svg"
+    favicon32x32: "favicon.svg"
+    apple_touch_icon: "favicon.svg"
+
+  homeInfoParams:
+    Title: "Hi, I'm Surbee 👋"
+    Content: >
+      I build things with gen AI: agents, specs, and tools that make software work better.
+      This is where I share what I build, what I learn, and what didn't work, as I go.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/Surbeegrover"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/surbhigrover/"
+    - name: rss
+      url: "index.xml"
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: archive
+      name: Archive
+      url: /archives/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 40
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 50
